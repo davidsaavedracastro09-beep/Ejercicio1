@@ -49,3 +49,6 @@ while opcion != 4:
         print("Historial de operaciones:")
         for operacion in historial:
             print("-", operacion)
+                # Opción inválida
+    else:
+        print("Opción no válida. Intente nuevamente.")
