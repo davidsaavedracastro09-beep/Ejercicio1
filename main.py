@@ -26,4 +26,27 @@ while opcion != 4:
     # Depositar dinero
     elif opcion == 2:
         deposito = float(input("Ingrese el monto a depositar: $"))
+    elif opcion == 2:
+        deposito = float(input("Ingrese el monto a depositar: $"))
+
+        if deposito > 0:
+            saldo += deposito
+            print(f"Depósito exitoso. Nuevo saldo: ${saldo}")
+            historial.append(f"Depositó ${deposito}")
+        else:
+            print("El monto debe ser mayor a 0")
+
+    # Retirar dinero
+    elif opcion == 3:
+        retiro = float(input("Ingrese el monto a retirar: $"))
+
+        if retiro <= saldo and retiro > 0:
+            saldo -= retiro
+            print(f"Retiro exitoso. Nuevo saldo: ${saldo}")
+            historial.append(f"Retiró ${retiro}")
+        elif retiro > saldo:
+            print("Fondos insuficientes")
+        else:
+            print("Ingrese un valor válido")
+
 
