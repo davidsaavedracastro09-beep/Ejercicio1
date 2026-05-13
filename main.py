@@ -16,3 +16,11 @@ while opcion != 4:
     print("2. Depositar dinero")
     print("3. Retirar dinero")
     print("4. Salir")
+    opcion = int(input("Seleccione una opción: "))
+    # Consultar saldo
+    if opcion == 1:
+        print(f"Su saldo actual es: ${saldo}")
+        historial.append("Consultó saldo")
+    # Depositar dinero
+    elif opcion == 2:
+        deposito = float(input("Ingrese el monto a depositar: $"))
