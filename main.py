@@ -42,4 +42,10 @@ while opcion != 4:
         elif retiro > saldo:
             print("Fondos insuficientes")
         else:
-            print("Ingrese un valor válido")
+            print("Ingrese un valor válido")    # Salir
+    elif opcion == 4:
+        print("Gracias por usar el cajero automático")
+
+        print("Historial de operaciones:")
+        for operacion in historial:
+            print("-", operacion)
